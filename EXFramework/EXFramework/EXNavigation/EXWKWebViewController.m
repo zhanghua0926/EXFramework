@@ -9,6 +9,7 @@
 #import "EXWKWebViewController.h"
 #import "EXUIScreenDefine.h"
 #import "UIView+EX.h"
+#import "UILabel+EX.h"
 
 static void *WebViewGoBackContext = &WebViewGoBackContext;
 static void *WebViewProgressingContext = &WebViewProgressingContext;
@@ -38,7 +39,7 @@ static void *WebViewProgressingContext = &WebViewProgressingContext;
     
     UILabel *reloadLabel = [[UILabel alloc] init];
     reloadLabel.text = @"点击重新加载";
-    CGSize size = [self.view sizeForLabel:reloadLabel];
+    CGSize size = [reloadLabel sizeForLabel];
     reloadLabel.frame = CGRectMake(0, 120, size.width, size.height);
     reloadLabel.userInteractionEnabled = YES;
     reloadLabel.centerX = _contentView.centerX;

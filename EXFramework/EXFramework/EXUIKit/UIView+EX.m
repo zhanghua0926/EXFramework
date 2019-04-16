@@ -121,22 +121,4 @@
     
 }
 
-
-#pragma mark - methods
-- (CGSize)sizeForLabel:(UILabel *)label {
-    return [self sizeForLabel:label maxWidth:([[UIScreen mainScreen] bounds].size.width)];
-}
-
-
-- (CGSize)sizeForLabel:(UILabel *)label
-              maxWidth:(CGFloat)maxWidth {
-    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc]init];
-    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
-    NSDictionary *attributes = @{NSFontAttributeName:label.font, NSParagraphStyleAttributeName:paragraphStyle};
-    CGSize labelSize = [label.text boundingRectWithSize:CGSizeMake(maxWidth, ([[UIScreen mainScreen] bounds].size.height))
-                                                options:NSStringDrawingUsesLineFragmentOrigin
-                                             attributes:attributes
-                                                context:nil].size;
-    return labelSize;
-}
 @end

@@ -22,9 +22,4 @@
 @property (nonatomic, assign) CGFloat height;
 @property (nonatomic, assign) CGSize size;
 
-- (CGSize)sizeForLabel:(UILabel *)label;
-
-- (CGSize)sizeForLabel:(UILabel *)label
-              maxWidth:(CGFloat)maxWidth;
-
 @end
