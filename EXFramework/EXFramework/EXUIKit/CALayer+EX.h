@@ -7,12 +7,15 @@
 //
 
 #import <QuartzCore/QuartzCore.h>
+#import <UIKit/UIKit.h>
 
 @interface CALayer (EX)
 
-- (void)haloLayerWithRadius:(CGFloat)radius color:(NSString *)color;
-- (void)haloLayerWithStroke:(CGFloat)strokeWidth color:(NSString *)color;
+// 圆角
+- (void)haloLayerWithRadius:(CGFloat)radius color:(UIColor *)color;
+// 直角
+- (void)haloLayerWithStroke:(CGFloat)strokeWidth color:(UIColor *)color;
 
-
+- (void)removeHaloLayer;
 
 @end

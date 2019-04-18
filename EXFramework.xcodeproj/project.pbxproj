@@ -53,6 +53,7 @@
 		07774C6922533DFC00E7F2EF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5522533DFC00E7F2EF /* AFURLRequestSerialization.m */; };
 		07774C6A22533DFC00E7F2EF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5722533DFC00E7F2EF /* AFNetworkReachabilityManager.m */; };
 		07774C6B22533DFC00E7F2EF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5822533DFC00E7F2EF /* AFSecurityPolicy.m */; };
+		07BA234B22690B8800E3287F /* EXHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BA234A22690B8800E3287F /* EXHaloLayer.m */; };
 		07C219582268919200435192 /* CALayer+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C219572268919200435192 /* CALayer+EX.m */; };
 		07ED58E322667A2200215A29 /* UILabel+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED58E222667A2200215A29 /* UILabel+EX.m */; };
 /* End PBXBuildFile section */
@@ -154,6 +155,8 @@
 		07774C5822533DFC00E7F2EF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
 		07774C5922533DFC00E7F2EF /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		07774C5A22533DFC00E7F2EF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		07BA234922690B8800E3287F /* EXHaloLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXHaloLayer.h; sourceTree = "<group>"; };
+		07BA234A22690B8800E3287F /* EXHaloLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXHaloLayer.m; sourceTree = "<group>"; };
 		07C219562268919200435192 /* CALayer+EX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+EX.h"; sourceTree = "<group>"; };
 		07C219572268919200435192 /* CALayer+EX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+EX.m"; sourceTree = "<group>"; };
 		07ED58E122667A2200215A29 /* UILabel+EX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+EX.h"; sourceTree = "<group>"; };
@@ -250,6 +253,8 @@
 				07ED58E222667A2200215A29 /* UILabel+EX.m */,
 				07C219562268919200435192 /* CALayer+EX.h */,
 				07C219572268919200435192 /* CALayer+EX.m */,
+				07BA234922690B8800E3287F /* EXHaloLayer.h */,
+				07BA234A22690B8800E3287F /* EXHaloLayer.m */,
 			);
 			path = EXUIKit;
 			sourceTree = "<group>";
@@ -455,6 +460,7 @@
 			files = (
 				07774C6B22533DFC00E7F2EF /* AFSecurityPolicy.m in Sources */,
 				07774BF02252263400E7F2EF /* EXCalendarCircleView.m in Sources */,
+				07BA234B22690B8800E3287F /* EXHaloLayer.m in Sources */,
 				07774C6022533DFC00E7F2EF /* UIImageView+AFNetworking.m in Sources */,
 				07774BEE2252263400E7F2EF /* EXInputViewController.m in Sources */,
 				07774BF72252263400E7F2EF /* EXCalendarDayItem.m in Sources */,
