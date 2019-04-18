@@ -53,6 +53,7 @@
 		07774C6922533DFC00E7F2EF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5522533DFC00E7F2EF /* AFURLRequestSerialization.m */; };
 		07774C6A22533DFC00E7F2EF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5722533DFC00E7F2EF /* AFNetworkReachabilityManager.m */; };
 		07774C6B22533DFC00E7F2EF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5822533DFC00E7F2EF /* AFSecurityPolicy.m */; };
+		07C219582268919200435192 /* CALayer+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C219572268919200435192 /* CALayer+EX.m */; };
 		07ED58E322667A2200215A29 /* UILabel+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED58E222667A2200215A29 /* UILabel+EX.m */; };
 /* End PBXBuildFile section */
 
@@ -153,6 +154,8 @@
 		07774C5822533DFC00E7F2EF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
 		07774C5922533DFC00E7F2EF /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		07774C5A22533DFC00E7F2EF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		07C219562268919200435192 /* CALayer+EX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+EX.h"; sourceTree = "<group>"; };
+		07C219572268919200435192 /* CALayer+EX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+EX.m"; sourceTree = "<group>"; };
 		07ED58E122667A2200215A29 /* UILabel+EX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+EX.h"; sourceTree = "<group>"; };
 		07ED58E222667A2200215A29 /* UILabel+EX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+EX.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -245,6 +248,8 @@
 				07774BB82252263400E7F2EF /* UIView+EX.m */,
 				07ED58E122667A2200215A29 /* UILabel+EX.h */,
 				07ED58E222667A2200215A29 /* UILabel+EX.m */,
+				07C219562268919200435192 /* CALayer+EX.h */,
+				07C219572268919200435192 /* CALayer+EX.m */,
 			);
 			path = EXUIKit;
 			sourceTree = "<group>";
@@ -468,6 +473,7 @@
 				07774BF92252263400E7F2EF /* NSString+EXHash.m in Sources */,
 				07774BE62252263400E7F2EF /* EXNetworkingError.m in Sources */,
 				07774C5F22533DFC00E7F2EF /* AFNetworkActivityIndicatorManager.m in Sources */,
+				07C219582268919200435192 /* CALayer+EX.m in Sources */,
 				07774BF12252263400E7F2EF /* EXCalendarApperance.m in Sources */,
 				07774BF52252263400E7F2EF /* EXCalendarView.m in Sources */,
 				07774BF22252263400E7F2EF /* EXCalendarCollectionViewCell.m in Sources */,
