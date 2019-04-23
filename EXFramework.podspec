@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EXFramework"
-  s.version      = "0.1.5"
+  s.version      = "0.1.6"
   s.summary      = "iOS base framework so that develop you can quickly"
   s.description  = <<-DESC
                    include common use function ,such as extend control, networking, customer control...
