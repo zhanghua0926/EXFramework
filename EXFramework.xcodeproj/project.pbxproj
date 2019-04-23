@@ -273,13 +273,13 @@
 			isa = PBXGroup;
 			children = (
 				07774BC42252263400E7F2EF /* EXBaseViewController.h */,
-				07774BC52252263400E7F2EF /* EXInputViewController.h */,
-				07774BC62252263400E7F2EF /* EXRootNavigationController.m */,
-				07774BC72252263400E7F2EF /* EXWKWebViewController.m */,
-				07774BC82252263400E7F2EF /* EXInputViewController.m */,
 				07774BC92252263400E7F2EF /* EXBaseViewController.m */,
+				07774BC52252263400E7F2EF /* EXInputViewController.h */,
+				07774BC82252263400E7F2EF /* EXInputViewController.m */,
 				07774BCA2252263400E7F2EF /* EXRootNavigationController.h */,
+				07774BC62252263400E7F2EF /* EXRootNavigationController.m */,
 				07774BCB2252263400E7F2EF /* EXWKWebViewController.h */,
+				07774BC72252263400E7F2EF /* EXWKWebViewController.m */,
 			);
 			path = EXNavigation;
 			sourceTree = "<group>";

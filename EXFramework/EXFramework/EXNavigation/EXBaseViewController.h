@@ -48,22 +48,12 @@ typedef NS_OPTIONS(NSInteger, NavBarStyle) {
 
 
 /**
- Initialize the view controller with navigation bar.
- 
- @param navBarStyle Navigation bar button.
+ Initialize required the view controller with data.
+
+ @param data Will be display controller's data.
  @return View controller.
  */
-- (instancetype)initWithNavBarStyle:(NavBarStyle)navBarStyle;
-
-
-/**
- Initialize the view controller with navigation bar, data.
- 
- @param navBarStyle Navigation bar button.
- @param data The controller initializes the required data and encapsulates it with the model.
- @return View controller.
- */
-- (instancetype)initWithNavBarStyle:(NavBarStyle)navBarStyle data:(id)data;
+- (instancetype)initWithData:(id)data;
 
 
 /**

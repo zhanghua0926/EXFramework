@@ -15,51 +15,12 @@
 
 @implementation EXBaseViewController
 #pragma mark - InitContent
-- (instancetype)initWithNavBarStyle:(NavBarStyle)navBarStyle {
-    return [self initWithNavBarStyle:navBarStyle data:nil];
-}
-
-
-- (instancetype)initWithNavBarStyle:(NavBarStyle)navBarStyle data:(id)data {
+- (instancetype)initWithData:(id)data {
     if (self = [super init]) {
         self.controllerData = data;
-        
-        [self createNavbar:navBarStyle];
     }
     
     return self;
-}
-
-
-- (void)createNavbar:(NavBarStyle)navBarStyle {
-    UIButton *navBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    navBtn.frame = CGRectMake(-10, 5, 48, 34);
-    navBtn.exclusiveTouch = YES;
-    
-    switch (navBarStyle) {
-        case NavBarStyleNone:
-            return;
-            
-        case NavBarStyleBack:
-            [navBtn setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
-            [navBtn addTarget:self action:@selector(navBack) forControlEvents:UIControlEventTouchUpInside];
-            self.backBtn = navBtn;
-            break;
-            
-        case NavBarStyleHome:
-            [navBtn setImage:[UIImage imageNamed:@"nav_home"] forState:UIControlStateNormal];
-            [navBtn addTarget:self action:@selector(navHome) forControlEvents:UIControlEventTouchUpInside];
-            break;
-            
-        default:
-            break;
-    }
-    
-    UIView *btnView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
-    [btnView addSubview:navBtn];
-    
-    UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:btnView];
-    self.navigationItem.leftBarButtonItem = barItem;
 }
 
 
@@ -74,7 +35,6 @@
 #pragma mark - LoadData
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.backgroundColor = [UIColor whiteColor];
     
     if ([self showNavigationBar]) {
