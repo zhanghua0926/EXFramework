@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "CALayer+EX.h"
+#import "EXSearchPath.h"
+#import "EXFileManager.h"
 
 #define kRandomColor [UIColor colorWithRed:arc4random() % 255 / 255.0 green:arc4random() % 255 / 255.0 blue:arc4random() % 255 / 255.0 alpha:arc4random() % 255 / 255.0]
 
@@ -20,10 +22,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    for (NSInteger i = 0; i < 10; i ++)
-    {
-        [self addAView:i];
+//    for (NSInteger i = 0; i < 10; i ++)
+//    {
+//        [self addAView:i];
+//    }
+    
+    [self searchPath];
+}
+
+
+- (void)searchPath {
+    NSLog(@"%@",[EXSearchPath searchDocumentPath]);
+    [EXFileManager createFolder:@"Rhesis" directory:[EXSearchPath searchDocumentPath]];
+    [EXFileManager createFile:@"test.txt" directory:[EXSearchPath searchDocumentPath]];
+    [EXFileManager writeFile:@"test.txt" content:@"qwertyuiopasdfghjklzxcvbn" directory:[EXSearchPath searchDocumentPath]];
+    NSLog(@"%@", [EXFileManager readFile:@"test.txt" directory:[EXSearchPath searchDocumentPath]]);
+    for (int i = 0; i < 2; i++) {
+        NSString *file = [NSString stringWithFormat:@"%dtext.txt",i];
+        NSString *path = [[EXSearchPath searchDocumentPath] stringByAppendingPathComponent:@"Rhesis"];
+        [EXFileManager writeFile:file content:@"qwertyuiopasdfghjklzxcvbn" directory:path];
     }
+    
+    NSLog(@"file size is %llu", [EXFileManager fileSizeAtPath:@"test.txt" directory:[EXSearchPath searchDocumentPath]]);
+    NSLog(@"folder size is %f", [EXFileManager folderSizeAtPath:@"Rhesis" directory:[EXSearchPath searchDocumentPath]]);
 }
 
 

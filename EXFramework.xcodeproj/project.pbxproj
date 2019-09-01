@@ -53,6 +53,8 @@
 		07774C6922533DFC00E7F2EF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5522533DFC00E7F2EF /* AFURLRequestSerialization.m */; };
 		07774C6A22533DFC00E7F2EF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5722533DFC00E7F2EF /* AFNetworkReachabilityManager.m */; };
 		07774C6B22533DFC00E7F2EF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07774C5822533DFC00E7F2EF /* AFSecurityPolicy.m */; };
+		079C169023182D9600C9297A /* EXSearchPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 079C168F23182D9600C9297A /* EXSearchPath.m */; };
+		079C16932318395200C9297A /* EXFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 079C16922318395200C9297A /* EXFileManager.m */; };
 		07BA234B22690B8800E3287F /* EXHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 07BA234A22690B8800E3287F /* EXHaloLayer.m */; };
 		07C219582268919200435192 /* CALayer+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C219572268919200435192 /* CALayer+EX.m */; };
 		07ED58E322667A2200215A29 /* UILabel+EX.m in Sources */ = {isa = PBXBuildFile; fileRef = 07ED58E222667A2200215A29 /* UILabel+EX.m */; };
@@ -155,6 +157,10 @@
 		07774C5822533DFC00E7F2EF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
 		07774C5922533DFC00E7F2EF /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFCompatibilityMacros.h; sourceTree = "<group>"; };
 		07774C5A22533DFC00E7F2EF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		079C168E23182D9600C9297A /* EXSearchPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXSearchPath.h; sourceTree = "<group>"; };
+		079C168F23182D9600C9297A /* EXSearchPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXSearchPath.m; sourceTree = "<group>"; };
+		079C16912318395200C9297A /* EXFileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXFileManager.h; sourceTree = "<group>"; };
+		079C16922318395200C9297A /* EXFileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXFileManager.m; sourceTree = "<group>"; };
 		07BA234922690B8800E3287F /* EXHaloLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXHaloLayer.h; sourceTree = "<group>"; };
 		07BA234A22690B8800E3287F /* EXHaloLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EXHaloLayer.m; sourceTree = "<group>"; };
 		07C219562268919200435192 /* CALayer+EX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+EX.h"; sourceTree = "<group>"; };
@@ -211,6 +217,7 @@
 		07774BAA2252263400E7F2EF /* EXFramework */ = {
 			isa = PBXGroup;
 			children = (
+				079C168D23182CF200C9297A /* EXStorage */,
 				07774BAB2252263400E7F2EF /* EXNetworking */,
 				07774BB42252263400E7F2EF /* EXUIKit */,
 				07774BBF2252263400E7F2EF /* EXDefine */,
@@ -386,6 +393,17 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		079C168D23182CF200C9297A /* EXStorage */ = {
+			isa = PBXGroup;
+			children = (
+				079C168E23182D9600C9297A /* EXSearchPath.h */,
+				079C168F23182D9600C9297A /* EXSearchPath.m */,
+				079C16912318395200C9297A /* EXFileManager.h */,
+				079C16922318395200C9297A /* EXFileManager.m */,
+			);
+			path = EXStorage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -468,6 +486,7 @@
 				07774C6322533DFC00E7F2EF /* UIWebView+AFNetworking.m in Sources */,
 				07774C6922533DFC00E7F2EF /* AFURLRequestSerialization.m in Sources */,
 				07774BE72252263400E7F2EF /* UIImage+EX.m in Sources */,
+				079C169023182D9600C9297A /* EXSearchPath.m in Sources */,
 				07774BED2252263400E7F2EF /* EXWKWebViewController.m in Sources */,
 				07774BE42252263400E7F2EF /* EXNetworkingDefine.m in Sources */,
 				07774BF42252263400E7F2EF /* EXCalendarWeekView.m in Sources */,
@@ -491,6 +510,7 @@
 				07774BE82252263400E7F2EF /* UIView+EX.m in Sources */,
 				07774BEA2252263400E7F2EF /* UITextView+EX.m in Sources */,
 				07774BF82252263400E7F2EF /* NSArray+EX.m in Sources */,
+				079C16932318395200C9297A /* EXFileManager.m in Sources */,
 				07774BE32252263400E7F2EF /* EXNetworkingManager.m in Sources */,
 				07774C5E22533DFC00E7F2EF /* UIRefreshControl+AFNetworking.m in Sources */,
 				07774C6822533DFC00E7F2EF /* AFURLSessionManager.m in Sources */,
