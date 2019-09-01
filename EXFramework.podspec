@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "EXFramework"
-  s.version      = "0.1.5"
+  s.version      = "0.1.6"
   s.summary      = "iOS base framework so that develop you can quickly"
   s.description  = <<-DESC
                    include common use function ,such as extend control, networking, customer control...
@@ -42,6 +42,10 @@ Pod::Spec.new do |s|
   s.subspec 'EXUIKit' do |uikit|
       uikit.source_files = "EXFramework/EXFramework/EXUIKit/*.{h,m}"
       uikit.dependency 'EXFramework/EXDefine'
+  end
+
+  s.subspec 'EXStorage' do |storage|
+      storage.source_files = "EXFramework/EXFramework/EXStorage/*.{h,m}"
   end
 
 

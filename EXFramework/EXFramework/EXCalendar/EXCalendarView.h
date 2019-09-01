@@ -71,12 +71,12 @@
 /**
  Scroll to previous month section.
  */
-- (void)scrollToPreviousMonth;
+- (void)scrollToPreviousMonth:(BOOL)animated;
 
 /**
  Scroll to next month section.
  */
-- (void)scrollToNextMonth;
+- (void)scrollToNextMonth:(BOOL)animated;
 
 /**
  Refresh specified date.

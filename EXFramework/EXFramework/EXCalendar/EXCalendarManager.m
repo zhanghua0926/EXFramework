@@ -22,12 +22,12 @@
 
 
 - (void)scrollToPreviousMonth {
-    [self.calendarView scrollToPreviousMonth];
+    [self.calendarView scrollToPreviousMonth:YES];
 }
 
 
 - (void)scrollToNextMonth {
-    [self.calendarView scrollToNextMonth];
+    [self.calendarView scrollToNextMonth:YES];
 }
 
 @end
